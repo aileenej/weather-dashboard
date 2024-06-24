@@ -2,10 +2,10 @@
 
 // I need functionality for the submission form
 
-const APIKey = "e7489becf00f32dd1d856bb063abf1cf";
+var lon;
+var lat;
 
-var city;
+const APIkey = "e7489becf00f32dd1d856bb063abf1cf";
+const queryURL = 'http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=${APIkey}';
 
-const queryURL = 'http://api.openweathmap.org/data/2.5/weather?q=${city}&appid=${APIKey}';
-
-// Figure out how to assign user input to city variable
+// Figure out how to retrieve geographical coodorinates given a city name
